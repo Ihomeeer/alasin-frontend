@@ -1,0 +1,11 @@
+.App {
+  text-align: center;
+  width: 440px;
+  height: max-content;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid gray;
+  box-sizing: border-box;
+}

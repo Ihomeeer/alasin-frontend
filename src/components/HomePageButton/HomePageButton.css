@@ -1,0 +1,29 @@
+.homePageButton__container {
+  width: 170px;
+  height: 170px;
+  padding: 16px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-sizing: border-box;
+  background-color: #447C9B;
+}
+
+.homePageButton__image {
+  margin-top: 48px;
+  width: 100px;
+  height: min-content;
+}
+
+.homePageButton__image__title {
+  width: 100%;
+  height: 17px;
+  margin: 5px 0 0;
+  font-family: "inter";
+  font-weight: 400;
+  text-align: start;
+  font-size: 13px;
+  line-height: 16px;
+  color: #fff;
+}
