@@ -26,7 +26,7 @@ const testLessonsCards = [
   {
     title: 'Вводные конструкции',
     imageLink: 'https://youtravel.me/upload/chat/ead/6aouczs5xil3nf62pjgz1ekncgj1y941.jpeg',
-    progressBar: 15,
+    progressBar: 1,
     id: 2,
   },
   {

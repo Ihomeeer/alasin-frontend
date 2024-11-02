@@ -1,6 +1,6 @@
 import React from "react";
 import './HomePageLessonsCard.css';
-import { testUsers } from "../../utils/TestData";
+import HomePageProgressBar from "../HomePageProgressBar/HomePageProgressBar";
 
 function HomePageLessonsCard({ item }) {
 
@@ -10,6 +10,10 @@ function HomePageLessonsCard({ item }) {
       <p className="homePageLessonsCard__title">
         {item.title}
       </p>
+      <HomePageProgressBar
+        value={item.progressBar}
+        max={100}
+      />
     </div>
   );
 }
