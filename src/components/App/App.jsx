@@ -8,6 +8,7 @@ import {
 import ReactDOM from 'react-dom/client';
 import './App.css';
 import HomePage from "../HomePage/HomePage";
+import LoginPage from "../LoginPage/LoginPage";
 
 function App() {
     return (
@@ -15,6 +16,9 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomePage />} />
+        </Routes>
+        <Routes>
+          <Route path="/login" element={<LoginPage />} />
         </Routes>
       </BrowserRouter>
       </div>

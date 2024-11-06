@@ -1,0 +1,9 @@
+.logo__link {
+  margin: 210px 16px 16px auto;
+  align-self: flex-end;
+}
+
+.logo {
+  width: 110px;
+  height: 110px;
+}
