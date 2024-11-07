@@ -3,6 +3,7 @@
   width: 440px;
   height: max-content;
   margin: 16px auto;
+  /* padding: 16px; */
   display: flex;
   flex-direction: column;
   align-items: center;

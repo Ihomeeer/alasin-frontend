@@ -9,20 +9,31 @@ import ReactDOM from 'react-dom/client';
 import './App.css';
 import HomePage from "../HomePage/HomePage";
 import LoginPage from "../LoginPage/LoginPage";
+import RegisterPage from "../RegisterPage/RegisterPage";
 
 function App() {
-    return (
-      <div className="App">
+  return (
+    <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<HomePage />} />
-        </Routes>
-        <Routes>
-          <Route path="/login" element={<LoginPage />} />
+          <Route
+            path='/'
+            element={<HomePage />}
+          />
+
+          <Route
+            path='/login'
+            element={<LoginPage />}
+          />
+
+          <Route
+            path='/register'
+            element={<RegisterPage />}
+          />
         </Routes>
       </BrowserRouter>
-      </div>
-    );
+    </div>
+  );
 }
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

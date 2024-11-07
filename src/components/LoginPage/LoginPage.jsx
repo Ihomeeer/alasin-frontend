@@ -12,6 +12,8 @@ function LoginPage() {
         <h1 className="loginPage__greetings">Рады видеть!</h1>
         <fieldset className="loginPage__inputsWrapper">
 
+
+
           <div className="loginPage__inputModule">
             <label className="loginPage__label loginPage__labelTypeEmail" htmlFor="email">E-mail</label>
             <input
@@ -57,7 +59,7 @@ function LoginPage() {
         <button type="submit" className="loginPage__submitButton" disabled={true}>Войти</button>
         <div className="loginPage__signinWrapper">
           <p className="loginPage__text">Еще не зарегистрированы?</p>
-          <Link className="loginPage__link" to="/signup">Регистрация</Link>
+          <Link className="loginPage__link" to="/register">Регистрация</Link>
         </div>
       </form>
       <Logo
