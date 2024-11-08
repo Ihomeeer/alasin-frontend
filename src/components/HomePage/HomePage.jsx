@@ -3,7 +3,7 @@ import HomePageProfile from "../HomePageProfile/HomePageProfile";
 import HomePageLessons from "../HomePageLessons/HomePageLessons";
 import logoPath from '../../images/homePage/Logo.png';
 import Logo from "../Logo/Logo";
-import './HomePage.css';
+import './HomePage.scss';
 
 function HomePage() {
   return (

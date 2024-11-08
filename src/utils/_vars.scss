@@ -1,0 +1,7 @@
+@mixin flexible-center () {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+};
+
+$primary-color: rgba(217, 217, 217, 1);
