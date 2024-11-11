@@ -1,4 +1,7 @@
+@use '../../utils/vars';
+
 .homePageButton__container {
+  @include vars.flexible(column, flex-start);
   width: 170px;
   height: 170px;
   padding: 16px;
@@ -7,7 +10,7 @@
   flex-direction: column;
   align-items: flex-start;
   box-sizing: border-box;
-  background-color: #447C9B;
+  background-color: vars.$secondary-color;
 }
 
 .homePageButton__image {
@@ -17,13 +20,10 @@
 }
 
 .homePageButton__image__title {
+  @include vars.font(13px, 16px);
   width: 100%;
   height: 17px;
   margin: 5px 0 0;
-  font-family: "inter";
-  font-weight: 400;
   text-align: start;
-  font-size: 13px;
-  line-height: 16px;
-  color: #fff;
+  color: vars.$text-color-white;
 }

@@ -1,10 +1,9 @@
-@import '../../utils/vars';
+@use '../../utils/vars';
 
 .homepage {
-  @include flexible-center;
+  @include vars.flexible(column, center);
   width: 440px;
   height: max-content;
-  flex-direction: column;
 }
 
 .homepage__learnToday {
@@ -22,6 +21,6 @@
   font-size: 24px;
   line-height: 29px;
   border-radius: 16px;
-  background-color: $primary-color;
+  background-color: vars.$primary-color;
   box-sizing: border-box;
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import './HomePageLessons.css';
+import './HomePageLessons.scss';
 import { testLessonsCards } from "../../utils/TestData";
 import HomePageLessonsCard from "../HomePageLessonsCard/HomePageLessonsCard";
 import HomePageButton from "../HomePageButton/HomePageButton";

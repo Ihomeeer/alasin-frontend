@@ -1,7 +1,36 @@
-@mixin flexible-center () {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-};
+//---------------Цвета
+$gray: rgba(217, 217, 217, 1);
+$blue: rgba(68, 124, 155, 1);
+$green: rgba(103, 122, 76, 1);
+$white: rgba(255, 255, 255, 1);
+$black: rgba(10, 7, 23, 1);
+$dark-red: rgba(139, 48, 55, 0.96);
 
-$primary-color: rgba(217, 217, 217, 1);
+$primary-color: $gray;
+$secondary-color: $blue;
+$service-color: $green;
+$text-color-white: $white;
+$text-color-black: $black;
+$text-error: $dark-red;
+
+//---------------Миксины
+
+//Флексбокс
+@mixin flexible ($direction, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: center;
+  align-items: $align;
+}
+
+;
+
+//Шрифт
+@mixin font ($size, $line) {
+  font-family: "inter";
+  font-weight: 400;
+  font-size: $size;
+  line-height: $line;
+}
+
+;

@@ -1,5 +1,5 @@
 import React from "react";
-import './HomePageProgressBar.css';
+import './HomePageProgressBar.scss';
 
 
 function HomePageProgressBar({ value, max }) {

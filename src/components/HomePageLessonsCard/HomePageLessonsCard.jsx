@@ -1,5 +1,5 @@
 import React from "react";
-import './HomePageLessonsCard.css';
+import './HomePageLessonsCard.scss';
 import HomePageProgressBar from "../HomePageProgressBar/HomePageProgressBar";
 
 function HomePageLessonsCard({ item }) {

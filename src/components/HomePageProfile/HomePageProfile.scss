@@ -1,12 +1,11 @@
+@use '../../utils/vars';
+
 .homePageProfile__container {
+  @include vars.flexible(row, center);
   width: 408px;
   min-height: 107px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  /* justify-content: center; */
   border-radius: 16px;
-  background-color: #D9D9D9;
+  background-color: vars.$primary-color;
   box-sizing: border-box;
 }
 
@@ -17,15 +16,12 @@
   border-radius: 50%;
   overflow: hidden;
   object-fit: cover;
-  background-color: #447C9B;
+  background-color: vars.$secondary-color;
 }
 
 .homePageProfile__greeting {
+  @include vars.font(24px, 29px);
   width: 291px;
   margin: auto auto auto 0;
-  font-family: "inter";
-  font-weight: 400;
   text-align: start;
-  font-size: 24px;
-  line-height: 29px;
 }

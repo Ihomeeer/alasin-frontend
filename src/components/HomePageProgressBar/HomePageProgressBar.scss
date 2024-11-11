@@ -1,7 +1,9 @@
+@use '../../utils/vars';
+
 .homePageProgressBar__container {
   width: 138px;
   height: 25px;
-  background-color: rgb(255, 255, 255);
+  background-color: vars.$text-color-white;
   border-radius: 16px;
   position: relative;
 }
@@ -10,19 +12,16 @@
   height: 25px;
   min-width: 30px;
   margin-left: -1px;
-  background-color: rgb(103, 122, 76);
+  background-color: vars.$service-color;
   transition: width 0.5s ease-in-out;
   border-radius: 16px;
 }
 
 .homePageProgressBar__percentage {
+  @include vars.font(11px, 13px);
   position: absolute;
   margin: 0;
   bottom: 6px;
   right: 6px;
-  font-family: "inter";
-  font-weight: 400;
   text-align: start;
-  font-size: 11px;
-  line-height: 13px;
 }

@@ -1,23 +1,20 @@
+@use '../../utils/vars';
+
 .registerPage {
+  @include vars.flexible(column, center);
   width: 408px;
   height: max-content;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
   background-color: #D9D9D9;
   border-radius: 16px;
 }
 
 .registerPage__greetings {
+  @include vars.font(32px, 32px);
   width: 100%;
   height: 29px;
   margin: 16px 0 40px;
-  font-family: "inter";
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 32px;
-  color: rgba(10, 7, 23, 1);
+  color: vars.$text-color-black;
 }
 
 .registerPage__inputsWrapper {
@@ -35,17 +32,14 @@
 }
 
 .registerPage__label {
+  @include vars.font(20px, 24px);
   width: 100%;
   min-height: 12px;
   margin: 0 0;
-  font-family: "inter";
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
-  /* text-align: start; */
 }
 
 .registerPage__input {
+  @include vars.font(20px, 24px);
   width: 100%;
   height: 46px;
   padding: 15px;
@@ -53,21 +47,18 @@
   box-sizing: border-box;
   outline: none;
   border: none;
-  font-family: "inter";
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
-  background-color: #D9D9D9;
-  border-bottom: 2px solid rgba(10, 7, 23, 1);
-  color: rgba(10, 7, 23, 1);
+  background-color: vars.$primary-color;
+  border-bottom: 2px solid vars.$text-color-black;
+  color: vars.$text-color-black;
   outline: none;
 }
 
 .registerPage__errorSpan {
-  color: rgba(139, 48, 55, 0.96);
+  color: vars.$text-error;
 }
 
 .registerPage__submitButton {
+  @include vars.font(20px, 24px);
   width: 40%;
   height: 45px;
   padding: 0;
@@ -75,17 +66,13 @@
   margin: 0 auto 16px;
   border-radius: 16px;
   border: none;
-  font-family: "inter";
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
-  color: #D9D9D9;
-  background-color: #447C9B;
+  color: vars.$primary-color;
+  background-color: vars.$secondary-color;
   box-sizing: border-box;
 }
 
 .registerPage__submitButton:hover {
-  background-color: #558199;
+  background-color: vars.$secondary-color;
 }
 
 .registerPage__signinWrapper {
@@ -94,28 +81,22 @@
 }
 
 .registerPage__text {
+  @include vars.font(14px, 17px);
   width: fit-content;
   height: 17px;
   margin: 0;
-  font-family: "inter";
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
   color: #A0A0A0;
 }
 
 .registerPage__link {
+  @include vars.font(14px, 17px);
   width: fit-content;
   text-decoration: none;
   height: 17px;
   margin: 10px 0 0 0;
-  font-family: "inter";
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
-  color: #447C9B;
+  color: vars.$secondary-color;
 }
 
 .registerPage__link:hover {
-  color: #558199;
+  color: vars.$secondary-color;
 }

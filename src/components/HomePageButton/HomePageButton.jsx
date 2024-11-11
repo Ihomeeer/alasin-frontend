@@ -1,5 +1,5 @@
 import React from "react";
-import './HomePageButton.css';
+import './HomePageButton.scss';
 import ArrowPath from '../../images/homePage/Arrow.png';
 
 function HomePageButton() {
@@ -12,7 +12,3 @@ function HomePageButton() {
 }
 
 export default HomePageButton;
-
-
-
-

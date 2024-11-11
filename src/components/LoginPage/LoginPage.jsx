@@ -1,5 +1,5 @@
 import React from "react";
-import './LoginPage.css';
+import './LoginPage.scss';
 import Logo from "../Logo/Logo";
 import { Link } from 'react-router-dom';
 import logoPath from '../../images/homePage/Logo.png';

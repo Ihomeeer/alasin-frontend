@@ -1,5 +1,5 @@
 import React from "react";
-import './HomePageProfile.css';
+import './HomePageProfile.scss';
 import { testUsers } from "../../utils/TestData";
 
 function HomePageProfile() {
